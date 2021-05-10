@@ -1,0 +1,17 @@
+@import "./utils/variables";
+@import "./base/base";
+
+//components
+@import "./components/Project";
+@import "./components/button";
+
+//layout
+@import "./layout/Header";
+@import "./layout/Menu";
+@import "./layout/Footer";
+
+//pages
+@import "./pages/App";
+@import "./pages/Hero";
+@import "./pages/About";
+@import "./pages/Projects";

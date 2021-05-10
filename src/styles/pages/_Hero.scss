@@ -1,0 +1,48 @@
+.hero{
+    height: 100vh;
+    display: grid;
+    padding: 0 1.5rem;
+
+    &__content{
+        text-align: center;
+        place-self: center;
+        max-width: 16rem;
+
+        h1{
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.5px;
+        }
+
+        h2{
+            font-weight: $fw-sm;
+            margin-bottom: 2rem;
+            font-weight: 1.25rem;
+        }
+    }
+
+    a{
+        font-weight: $fw-lg;
+        letter-spacing: -0.25px;
+        padding: 1rem;
+        border-radius: 0.25rem;
+        border: 1px solid $very-light-gray;
+    }
+
+    @media screen and (min-width: 768px){
+        padding: 0 2.5rem;
+        &__content{
+            max-width: unset;
+        }
+    }
+
+    @media screen and (min-width: 1024px){
+        &__content{
+            place-self: center flex-start;
+            text-align: left;
+        }
+    }
+
+    @media screen and (min-width: 1440px){
+        padding: 0 10.3125rem;
+    }
+}

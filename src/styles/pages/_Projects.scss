@@ -1,0 +1,70 @@
+.projects{
+    padding: 5rem 1rem;
+
+    &__main-heading, &__soon-heading{
+        text-align: center;
+        margin-bottom: 2.5rem;
+        max-width: 60rem;
+
+        h2{
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        padding: 5rem 1.5rem;
+        &__main-heading, &__soon-heading{
+            margin-bottom: 4rem;
+        }
+    }
+
+    @media screen and (min-width: 1024px){
+        padding: 5rem 6.25rem;
+        &__main-heading, &__soon-heading{
+            text-align: left;
+        }
+    }
+
+    @media screen and (min-width: 1440px){
+        max-width: 85rem;
+        margin: auto;
+        &__main-heading, &__soon-heading{
+            margin-bottom: 4.5rem;
+        }
+
+        h2{
+            font-size: 2.5rem;
+            line-height: 4rem;
+            letter-spacing: 0.0444rem;
+        }
+    }
+
+    
+    &__main-content, &__soon-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        column-gap: 1.5rem;
+
+        @media screen and (min-width: 620px){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (min-width: 1440px){
+            row-gap: 2.5rem;
+            column-gap: 2.5rem;
+        }
+    }
+
+    &__main-content{
+        margin-bottom: 4rem;
+
+        @media screen and (min-width: 768px){
+            margin-bottom: 7rem;
+        }
+
+        @media screen and (min-width: 1440px){
+            margin-bottom: 10rem;
+        }
+    }
+}

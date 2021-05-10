@@ -1,0 +1,43 @@
+.btn{
+    &--close{
+        width: 2rem;
+        height: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        padding: 0.5rem;
+        position: relative;
+
+        span{
+            background-color: $white;
+            width: 1.5rem;
+            height: 1px;
+            position: absolute;
+            top: 1rem;
+            left: 0.25rem;
+
+            &:nth-child(1){
+                transform: rotate(-45deg);
+            }
+            &:nth-child(2){
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &--cta{
+        background-color: $primary-dark;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        border: 1px solid $very-light-gray;
+        color: $very-light-gray;
+        padding: 1rem;
+        
+        &:hover{
+            border-color: $very-light-gray;
+            background-color: $very-light-gray;
+            color: $secondary-dark;
+        }
+    }
+}

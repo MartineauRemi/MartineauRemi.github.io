@@ -1,0 +1,176 @@
+.about{
+    background-color: $secondary-dark;
+    &__cards-container{
+        padding: 5rem 2rem;
+        max-width: 85rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: 1024px){
+            padding: 5rem 6.25rem;
+            margin: auto;
+        }
+
+        @media screen and (min-width: 1440px){
+            flex-direction: row;
+        }
+    }
+
+    p{
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        font-weight: $fw-reg;
+    }
+
+    .about-card{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 18rem;
+        margin: 50px 0;
+        &__icon{
+            margin-bottom: 3rem;
+        }
+
+        @media screen and (min-width: 425px){
+            width: 310px;
+        }
+
+        @media screen and (min-width: 1440px){
+            width:350px;
+            &:not(:last-child){
+                margin-right: 4rem;
+            }
+        }
+    }
+
+    .skillset{
+        padding: 5rem 2.5rem;
+        padding-top: 0;
+        max-width: 85rem;
+
+        @media screen and (min-width: 1024px){
+            padding: 5rem 6.25rem;
+            padding-top: 0;
+        }
+
+        @media screen and (min-width: 1440px){
+            margin: auto;
+        }
+        
+        &__heading{
+            text-align: center;
+            margin-bottom: 2.5rem;
+            max-width: 60rem;
+            
+            h2{
+                margin-bottom: 1rem;
+            }
+        
+            @media screen and (min-width: 768px){
+                margin-bottom: 4rem;
+            }
+        
+            @media screen and (min-width: 1024px){
+                text-align: left;
+            }
+        
+            @media screen and (min-width: 1440px){
+                margin-bottom: 4.5rem;
+            
+                h2{
+                    font-size: 2.5rem;
+                    line-height: 4rem;
+                    letter-spacing: 0.0444rem;
+                }
+            }
+        }
+
+        &__skill-cards-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 12rem;
+            margin: auto;
+    
+            @media screen and (min-width: 375px){
+                max-width: 14rem;
+            }
+            
+            @media screen and (min-width: 768px){
+                grid-template-columns: 1fr 1fr 1fr;
+                max-width: 28.5rem;
+            }
+        }
+
+        &__skill-card{
+            place-self: center;
+            font-size: 3rem;
+            background-color: $secondary-dark;
+            color: $very-light-gray;
+            width: 6rem;
+            height: 6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3{
+                margin-top: 0.75rem;
+                opacity: 0;
+                font-size: 0.875rem;
+
+                @media screen and (min-width: 768px){
+                    font-size: 1rem;
+                }
+            }
+
+            &:hover{
+                background-color: $primary-dark;
+
+                h3{
+                    opacity: 1;
+                }
+            }
+    
+            &--html:hover{
+                 color: $orange;
+            }
+    
+            &--css:hover{
+                color: $marine;
+            }
+    
+            &--javascript:hover{
+                 color: $yellow;
+            }
+    
+            &--react:hover{
+                color: $cyan;
+            }
+    
+            &--nodejs:hover{
+                color: $green;
+            }
+    
+            &--sass:hover{
+                color: $pink;
+            }
+    
+            @media screen and (min-width: 375px){
+                font-size: 3.5rem;
+                width: 7rem;
+                height: 7rem;
+            }
+    
+            @media screen and (min-width: 1440px){
+                //font-size: 4rem;
+                width: 9.5rem;
+                height: 9.5rem;
+            }
+        }
+    }
+}
